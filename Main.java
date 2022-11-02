@@ -1,18 +1,24 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        int a,b;
-        double c,alan,u;
-        System.out.print("Üçgenin a sayısını giriniz");
-        a=inp.nextInt();
-        System.out.print("Üçgenin b sayısını giriniz");
-        b=inp.nextInt();
-        System.out.print("Üçgenin c sayısını giriniz");
-        c=inp.nextInt();
-        u=(a+b+c)/2;
-        alan=Math.sqrt(u*(u-a)*(u-b)*(u-c));
-        System.out.print("Alan: "+alan);
+        double armut, elma, domates, muz, patlıcan, tutar;
+        System.out.print("Kaç kilogram armut :");
+        Scanner input = new Scanner(System.in);
+        armut = input.nextInt();
+        System.out.print("Kaç kilogram elma :");
+        Scanner inputelma = new Scanner(System.in);
+        elma = inputelma.nextInt();
+        System.out.print("Kaç kilogram domates :");
+        Scanner inputdomates = new Scanner(System.in);
+        domates = inputdomates.nextInt();
+        System.out.print("Kaç kilogram muz :");
+        Scanner inputmuz = new Scanner(System.in);
+        muz = inputmuz.nextInt();
+        System.out.print("Kaç kilogram patlıcan :");
+        Scanner inputpatlıcan = new Scanner(System.in);
+        patlıcan = inputpatlıcan.nextInt();
+        tutar =((armut * 2.14)+(elma * 3.67)+(domates * 1.11)+(muz * 0.95)+(patlıcan * 5.00));
+        System.out.println("Toplam Tutar: " + tutar );
 
     }
-}
+    }
